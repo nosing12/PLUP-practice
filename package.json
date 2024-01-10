@@ -5,7 +5,9 @@
   "main": "",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --exec node server"
+    "dev": "nodemon --exec node server.mjs",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.7",
     "@babel/preset-env": "^7.23.8",
+    "@prisma/client": "^5.8.0",
     "nodemon": "^3.0.2"
   }
 }
